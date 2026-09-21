@@ -3,13 +3,14 @@
 Sistema de eventos acadêmicos exposto como API GraphQL, em Python (Ariadne, schema-first) e
 SQLite.
 
-Este repositório é um de uma série de quatro, o mesmo domínio implementado em quatro protocolos
+Este repositório é um de uma série de cinco, o mesmo domínio implementado em cinco protocolos
 diferentes para deixar a diferença visível em código, não só em slide:
 
 - [protocolos-graphql](https://github.com/Ericles-Porty/protocolos-graphql) (este repositório)
 - [protocolos-rest](https://github.com/Ericles-Porty/protocolos-rest)
 - [protocolos-soap](https://github.com/Ericles-Porty/protocolos-soap)
 - [protocolos-grpc](https://github.com/Ericles-Porty/protocolos-grpc)
+- [protocolos-websocket](https://github.com/Ericles-Porty/protocolos-websocket)
 
 ## Domínio
 
