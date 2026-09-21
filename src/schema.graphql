@@ -1,0 +1,41 @@
+type Aluno {
+  id: ID!
+  nome: String!
+  email: String!
+  eventos: [Evento!]!
+}
+
+type Evento {
+  id: ID!
+  titulo: String!
+  data: String!
+  alunos: [Aluno!]!
+}
+
+type Pagamento {
+  id: ID!
+  inscricaoId: ID!
+  valor: Float!
+  status: String!
+}
+
+type Inscricao {
+  id: ID!
+  status: String!
+  aluno: Aluno!
+  evento: Evento!
+  pagamento: Pagamento
+}
+
+type Query {
+  aluno(id: ID!): Aluno
+  evento(id: ID!): Evento
+  inscricao(id: ID!): Inscricao
+}
+
+type Mutation {
+  criarAluno(nome: String!, email: String!): Aluno!
+  criarEvento(titulo: String!, data: String!): Evento!
+  inscrever(alunoId: ID!, eventoId: ID!): Inscricao!
+  registrarPagamento(inscricaoId: ID!, valor: Float!): Pagamento!
+}
